@@ -103,14 +103,14 @@ https://templatemo.com/tm-591-villa-agency
       </div>
       <div class="item item-2">
         <div class="header-text">
-          <span class="category">Melbourne, <em>Australia</em></span>
-          <h2>Be Quick!<br>Get the best villa in town</h2>
+          <span class="category">Matcha, <em>Type</em></span>
+          <h2>Be Quick!<br>Get Your Perfect Matcha Now</h2>
         </div>
       </div>
       <div class="item item-3">
         <div class="header-text">
-          <span class="category">Miami, <em>South Florida</em></span>
-          <h2>Act Now!<br>Get the highest level penthouse</h2>
+          <span class="category">Matcha, <em>Type</em></span>
+          <h2>Act Now!<br>Get the highest level Matcha</h2>
         </div>
       </div>
     </div>
@@ -134,35 +134,38 @@ https://templatemo.com/tm-591-villa-agency
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Best useful links ?
+                  Our Values
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                Get <strong>the best villa</strong> website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates" target="_blank">best free CSS templates</a> in the world. Please tell your friends about it.</div>
+                  At Hakone Matcha, we are dedicated to delivering the finest, authentic Japanese matcha to tea lovers around the world. Inspired by the rich cultural heritage of Hakone, Japan, our brand combines tradition, purity, and wellness to bring an unparalleled matcha experience.</div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How does this work ?
+                  Our Story
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Hakone Matcha was born from a passion for high-quality tea and a commitment to healthy, sustainable living. We source our matcha directly from the finest tea farms in Uji and Shizuoka, Japan, ensuring that every sip is rich in flavor, antioxidants, and centuries-old craftsmanship.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Why is Villa Agency the best ?
+                  Why Choose Hakone Matcha?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  ✅ Premium Quality: We offer only ceremonial-grade and culinary-grade matcha, ensuring a smooth taste, vibrant green color, and superior health benefits. <br>
+                  ✅ Authenticity & Purity: Our matcha is 100% organic, free from additives, preservatives, or artificial flavors. <br>
+                  ✅ Sustainable Sourcing: We work closely with Japanese tea farmers who use traditional and eco-friendly harvesting methods. <br>
+                  ✅ Health Benefits: Rich in antioxidants, L-theanine, and natural energy boosters, our matcha promotes calm focus, detoxification, and overall wellness.
                 </div>
               </div>
             </div>
@@ -380,7 +383,7 @@ https://templatemo.com/tm-591-villa-agency
                             <img src="<%= product.image %>" alt="">
                         </a>
                         <span class="category"><%= product.category %></span>
-                        <h6><%= product.price %></h6>
+                        <h6>$<%= product.price %></h6>
                         <h4>
                             <a href="property-details.html?id=<%= product.id %>"><%= product.title %></a>
                         </h4>
@@ -388,7 +391,7 @@ https://templatemo.com/tm-591-villa-agency
                             <li>Description: <span><%= product.description %></span></li>
                         </ul>
                         <div class="main-button">
-                            <a href="/product-preview/<%= product.title %>/<%= product.description %>/<%= encodeURIComponent(product.image) %>">
+                            <a href="/product-preview/<%= product.title %>/<%= product.description %>/<%= encodeURIComponent(product.image)%>/<%= product.price %>">
                                 <%= product.category === "Matcha" ? "Order" : "Schedule a visit" %>
                             </a>
                         </div>
@@ -426,20 +429,20 @@ https://templatemo.com/tm-591-villa-agency
           <div class="row">
             <div class="col-lg-6">
               <div class="item phone">
-                <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
+                <img src="/assets/images/phone-icon.png" alt="" style="max-width: 52px;">
                 <h6>010-020-0340<br><span>Phone Number</span></h6>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="item email">
-                <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
+                <img src="/assets/images/email-icon.png" alt="" style="max-width: 52px;">
                 <h6>info@villa.co<br><span>Business Email</span></h6>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5">
-          <form id="contact-form">
+          <form id="contact-form" action="/send-mail" method="post">
             <div class="row">
                 <div class="col-lg-12">
                     <fieldset>
@@ -469,6 +472,7 @@ https://templatemo.com/tm-591-villa-agency
                     <fieldset>
                         <button type="submit" id="form-submit" class="orange-button">Send Message</button>
                     </fieldset>
+                    
                 </div>
             </div>
         </form>
@@ -490,14 +494,14 @@ https://templatemo.com/tm-591-villa-agency
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/js/isotope.min.js"></script>
+  <script src="/assets/js/owl-carousel.js"></script>
+  <script src="/assets/js/counter.js"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="/https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/assets/js/script.js"></script>
 
   </body>
 </html>
