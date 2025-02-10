@@ -14,10 +14,10 @@
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="/assets/css/owl.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -43,73 +43,26 @@ https://templatemo.com/tm-591-villa-agency
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> matchamail@gmail.com</li>
-            <li><i class="fa fa-map"></i> somewhere in kenya, ST 2100</li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links">
-            <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <h1>Hakone</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="properties.html">Products</a></li>
-                      <!-- <li><a href="property-details.html">Property Details</a></li> --> 
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
+  <%- include("partials/header") %>
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner">
     <div class="owl-carousel owl-banner">
       <div class="item item-1">
         <div class="header-text">
-          <span class="category">Matcha, <em>Type</em></span>
+          <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
           <h2>Hurry!<br>Get the Best Matcha </h2>
         </div>
       </div>
       <div class="item item-2">
         <div class="header-text">
-          <span class="category">Matcha, <em>Type</em></span>
+          <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
           <h2>Be Quick!<br>Get Your Perfect Matcha Now</h2>
         </div>
       </div>
       <div class="item item-3">
         <div class="header-text">
-          <span class="category">Matcha, <em>Type</em></span>
+          <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
           <h2>Act Now!<br>Get the highest level Matcha</h2>
         </div>
       </div>
@@ -175,22 +128,27 @@ https://templatemo.com/tm-591-villa-agency
           <div class="info-table">
             <ul>
               <li>
-                <img src="assets/images/info-icon-01.png" alt="" style="max-width: 52px;">
-                <h4>Matcha Feature 1<br><span>Total Flat Space</span></h4>
+                <i class="fas fa-leaf" style="font-size: 24px; color: #4CAF50;"></i>
+                <h4>100% Organic<br><span>Purely Natural Ingredients</span></h4>
               </li>
               <li>
-                <img src="assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
-                <h4>Matcha Feature 1<br><span>Contract Ready</span></h4>
+                <i class="fas fa-hand-holding-heart" style="font-size: 24px; color: #FF9800;"></i>
+                <h4>Handpicked<br><span>Premium Quality Matcha</span></h4>
               </li>
               <li>
-                <img src="assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
-                <h4>Matcha Feature 1<br><span>Payment Process</span></h4>
+                <i class="fas fa-shield-alt" style="font-size: 24px; color: #2196F3;"></i>
+                <h4>Rich in Antioxidants<br><span>Boosts Immunity</span></h4>
               </li>
               <li>
-                <img src="assets/images/info-icon-04.png" alt="" style="max-width: 52px;">
-                <h4>Matcha Feature 1<br><span>24/7 Under Control</span></h4>
+                <i class="fas fa-bolt" style="font-size: 24px; color: #FFC107;"></i>
+                <h4>Natural Energy<br><span>Enhanced Vitality</span></h4>
+              </li>
+              <li>
+                <i class="fas fa-mug-hot" style="font-size: 24px; color: #795548;"></i>
+                <h4>Refreshing Taste<br><span>A Flavorful Experience</span></h4>
               </li>
             </ul>
+            
           </div>
         </div>
       </div>
@@ -203,7 +161,7 @@ https://templatemo.com/tm-591-villa-agency
         <div class="col-lg-4 offset-lg-4">
           <div class="section-heading text-center">
             <h6>| Video View</h6>
-            <h2>Get Closer View & Different Feeling</h2>
+            <h2>Get Closer Taste & Different Feeling</h2>
           </div>
         </div>
       </div>
@@ -215,7 +173,7 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
           <div class="video-frame">
-            <img src="assets/images/video-frame.jpg" alt="">
+            <img src="assets/images/matcha-banner-4.webp" alt="">
             <a href="https://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
           </div>
         </div>
@@ -231,20 +189,20 @@ https://templatemo.com/tm-591-villa-agency
             <div class="row">
               <div class="col-lg-4">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2>
-                   <p class="count-text ">Buildings<br>Finished Now</p>
+                  <!-- <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2> -->
+                   <p class="count-text ">highest grade of matcha</p>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
-                  <p class="count-text ">Years<br>Experience</p>
+                  <!-- <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2> -->
+                  <p class="count-text ">Fast deliveries</p>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2>
-                  <p class="count-text ">Awwards<br>Won 2023</p>
+                  <!-- <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2> -->
+                  <p class="count-text ">Unique matcha drinks</p>
                 </div>
               </div>
             </div>
@@ -269,13 +227,13 @@ https://templatemo.com/tm-591-villa-agency
               <div class="nav-wrapper ">
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Appartment</button>
+                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Vanilla</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Villa House</button>
+                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Sakura</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">Penthouse</button>
+                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">White Chocolate</button>
                   </li>
                 </ul>
               </div>              
@@ -285,23 +243,24 @@ https://templatemo.com/tm-591-villa-agency
                     <div class="col-lg-3">
                       <div class="info-table">
                         <ul>
-                          <li>Total Flat Space <span>185 m2</span></li>
-                          <li>Floor number <span>26th</span></li>
-                          <li>Number of rooms <span>4</span></li>
-                          <li>Parking Available <span>Yes</span></li>
-                          <li>Payment Process <span>Bank</span></li>
+                          <li>Flavor: <span style="font-size: 15px;">Smooth & Creamy</span></li>
+                          <li>Grade: <span style="font-size: 15px;">Premium</span></li>
+                          <li>Style: <span style="font-size: 15px;">Perfect for Lattes</span></li>
+                          <li>Benefit: <span style="font-size: 15px;">Boosts Energy</span></li>
+                          <li>Origin: <span style="font-size: 15px;">Vanilla-Infused</span></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/matcha.webp" alt="">
+                      <img src="assets/images/Vanilla Matcha.webp" alt="">
                     </div>
                     <div class="col-lg-3">
-                      <h4>Extra Info About Property</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. 
-                      <br><br>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+                      <h4>Our Vanilla Matcha</h4>
+                      <p>Vanilla Matcha is a <strong>smooth, creamy twist</strong> on traditional matcha, balancing rich earthiness with natural sweetness. It’s packed with <strong>antioxidants and natural energy</strong>, making it a perfect <strong>wellness drink</strong>.<br><br> 
+
+                        With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>attract more customers</strong> and boost sales. Its <strong>vibrant look and unique taste</strong> make it an <strong>eye-catching, marketable product</strong>.<br></p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
                       </div>
                     </div>
                   </div>
@@ -311,22 +270,24 @@ https://templatemo.com/tm-591-villa-agency
                     <div class="col-lg-3">
                       <div class="info-table">
                         <ul>
-                          <li>Total Flat Space <span>250 m2</span></li>
-                          <li>Floor number <span>26th</span></li>
-                          <li>Number of rooms <span>5</span></li>
-                          <li>Parking Available <span>Yes</span></li>
-                          <li>Payment Process <span>Bank</span></li>
+                          <li>Flavor: <span style="font-size: 15px;">Floral & Sweet</span></li>
+                          <li>Grade: <span style="font-size: 15px;">Ceremonial</span></li>
+                          <li>Style: <span style="font-size: 15px;">Ideal for Lattes</span></li>
+                          <li>Benefit: <span style="font-size: 15px;">Antioxidant-Rich</span></li>
+                          <li>Origin: <span style="font-size: 15px;">Sakura-Infused</span></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/deal-02.jpg" alt="">
+                      <img src="assets/images/Sakura Matcha.webp" alt="">
                     </div>
                     <div class="col-lg-3">
-                      <h4>Detail Info About Villa</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
+                      <h4>Our Sakura Matcha</h4>
+                      <p>Sakura Matcha is a <strong>delicate, floral-infused twist</strong> on traditional matcha, blending rich green tea with subtle cherry blossom essence. It’s packed with <strong>antioxidants and calming properties</strong>, making it a perfect <strong>relaxation drink</strong>.<br><br>  
+
+                        With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>appeal to tea lovers</strong> and expand its audience. Its <strong>soft pink hues and elegant aroma</strong> make it an <strong>attractive, marketable product</strong>.<br></p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
                       </div>
                     </div>
                   </div>
@@ -336,22 +297,24 @@ https://templatemo.com/tm-591-villa-agency
                     <div class="col-lg-3">
                       <div class="info-table">
                         <ul>
-                          <li>Total Flat Space <span>320 m2</span></li>
-                          <li>Floor number <span>34th</span></li>
-                          <li>Number of rooms <span>6</span></li>
-                          <li>Parking Available <span>Yes</span></li>
-                          <li>Payment Process <span>Bank</span></li>
+                          <li>Flavor: <span style="font-size: 15px;">Sweet & Velvety</span></li>
+                          <li>Grade: <span style="font-size: 15px;">High Quality</span></li>
+                          <li>Style: <span style="font-size: 15px;">Perfect for Desserts</span></li>
+                          <li>Benefit: <span style="font-size: 15px;">Rich in Antioxidants</span></li>
+                          <li>Origin: <span style="font-size: 15px;">Chocolate-Infused</span></li>
                         </ul>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <img src="assets/images/deal-03.jpg" alt="">
+                      <img src="assets/images/White Chocolate Matcha.webp" alt="">
                     </div>
                     <div class="col-lg-3">
-                      <h4>Extra Info About Penthouse</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
+                      <h4>Our White Chocolate Matcha</h4>
+                      <p>White Chocolate Matcha is a <strong>smooth, indulgent fusion</strong> of rich matcha and creamy white chocolate, offering a <strong>luxurious and velvety</strong> taste experience. It’s packed with <strong>antioxidants and natural energy</strong>, making it both <strong>delicious and beneficial</strong>.<br><br>
+
+                        With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>attract dessert lovers</strong> and elevate its matcha menu. Its <strong>rich, creamy texture and premium appeal</strong> make it an <strong>irresistible, marketable product</strong>.<br><br></p>
                       <div class="icon-button">
-                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                        <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
                       </div>
                     </div>
                   </div>
@@ -364,7 +327,7 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
-  <div class="properties section">
+  <div id="products" class="properties section">
     <div class="properties section">
       <div class="container">
           <div class="row">
@@ -375,30 +338,7 @@ https://templatemo.com/tm-591-villa-agency
                   </div>
               </div>
           </div>
-          <div class="row" id="product-list">
-            <% products.forEach(product => { %>
-                <div class="col-lg-4 col-md-6">
-                    <div class="item">
-                        <a href="property-details.html?id=<%= product.id %>">
-                            <img src="<%= product.image %>" alt="">
-                        </a>
-                        <span class="category"><%= product.category %></span>
-                        <h6>$<%= product.price %></h6>
-                        <h4>
-                            <a href="property-details.html?id=<%= product.id %>"><%= product.title %></a>
-                        </h4>
-                        <ul>
-                            <li>Description: <span><%= product.description %></span></li>
-                        </ul>
-                        <div class="main-button">
-                            <a href="/product-preview/<%= product.title %>/<%= product.description %>/<%= encodeURIComponent(product.image)%>/<%= product.price %>">
-                                <%= product.category === "Matcha" ? "Order" : "Schedule a visit" %>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            <% }) %>
-        </div>
+          <%- include("partials/products-list") %>
         
       </div>
   </div>
@@ -424,19 +364,19 @@ https://templatemo.com/tm-591-villa-agency
       <div class="row">
         <div class="col-lg-7">
           <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171114.066427876!2d32.606061022138825!3d0.16492971062191256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182780d08350900f%3A0x403b0eb0a1976dd9!2sKenya!5e0!3m2!1sen!2sma!4v1738760948077!5m2!1sen!2sma" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
           </div>
           <div class="row">
             <div class="col-lg-6">
               <div class="item phone">
                 <img src="/assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>010-020-0340<br><span>Phone Number</span></h6>
+                <h6>+254 708634111<br><span>Phone Number</span></h6>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="item email">
                 <img src="/assets/images/email-icon.png" alt="" style="max-width: 52px;">
-                <h6>info@villa.co<br><span>Business Email</span></h6>
+                <h6>hakone.ke@gmail.com<br><span>Business Email</span></h6>
               </div>
             </div>
           </div>
@@ -482,15 +422,7 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-8">
-        <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. 
-        
-        Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-      </div>
-    </div>
-  </footer>
+  <%- include("partials/footer") %>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

@@ -1,0 +1,82 @@
+<div id="products" class="properties section">
+    <div class="properties section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="section-heading text-center">
+                        <h6>| Products</h6>
+                        <h2>Our Products</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="product-list">
+                <% products.forEach(product=> { %>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <a href="property-details.html?id=<%= product._id %>">
+                                <img src="<%= product.image %>" alt="">
+                            </a>
+                            <!--<span class="category"><%= product.category %></span>-->
+                            <h6>$<%= product.price %>
+                            </h6>
+                            <h4>
+                                <a href="property-details.html?id=<%= product.id %>">
+                                    <%= product.title %>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li>Description: <span>
+                                        <%= product.description %>
+                                    </span></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="main-button">
+                                        <a>
+                                            edit
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="main-button">
+                                        <a onclick="deleteProduct('<%= product._id %>')">
+        
+                                            delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function deleteProduct(productId) {
+        const confirmation = confirm("Are you sure you want to delete this product?");
+        if (!confirmation) return;
+
+        try {
+            const response = await fetch(`/delete-product/${productId}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                alert("Product deleted successfully!");
+                location.reload(); // Reload the page to reflect the changes
+            } else {
+                alert("Failed to delete product. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error deleting product:", error);
+            alert("An error occurred. Please try again.");
+        }
+    }
+</script>

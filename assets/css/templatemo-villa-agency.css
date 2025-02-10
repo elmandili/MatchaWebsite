@@ -924,7 +924,7 @@ Featured Style
 
 .featured .info-table ul li {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   padding-bottom: 35px;
   border-bottom: 1px solid #eee;
 }
@@ -941,7 +941,7 @@ Featured Style
 }
 
 .featured .info-table ul li h4 {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -951,6 +951,8 @@ Featured Style
   font-weight: 400;
 }
 
+
+
 /* 
 ---------------------------------------------
 Video Style
@@ -958,13 +960,32 @@ Video Style
 */
 
 .video {
-  background-image: url(../images/video-bg.jpg);
+  position: relative;
+  background-image: url(../images/matcha-banner-5.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 100px 0px 250px 0px;
-  position: relative;
 }
+
+/* Add a black overlay */
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Black with 50% opacity */
+  z-index: 0; /* Ensure it appears above the background */
+}
+
+/* Ensure content inside .video remains above the overlay */
+.video * {
+  position: relative;
+  z-index: 4;
+}
+
 
 .video-content {
   margin-top: -240px;
@@ -1222,16 +1243,36 @@ Contact Style
 */
 
 .contact {
-  background-image: url(../images/contact-bg.jpg);
+  position: relative;
+  background-image: url(../images/matcha-banner-5.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 100px 0px 250px 0px;
-  position: relative;
 }
+
+/* Add the black overlay */
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 1; /* Ensures it appears above the background */
+}
+
+/* Ensure all text and content inside .contact remains above the overlay */
+.contact * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .contact .section-heading h2 {
   color: #fff;
+  z-index: 10;
 }
 
 .contact-content {
@@ -1262,12 +1303,12 @@ Contact Style
 
 .contact-content .item img {
   float: left;
-  margin-right: 25px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
 .contact-content .item h6 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   vertical-align: middle;
 }
@@ -1375,13 +1416,29 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  position: relative;
+  background-image: url(../images/banner-matcha-2.webp);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 110px 0px;
   text-align: center;
+  color: white; /* Ensure text is visible */
+  z-index: 1; /* Ensure content appears above the overlay */
 }
+
+/* Create the black overlay */
+.page-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: -1; /* Place behind text content */
+}
+
 
 .page-heading span {
   background-color: #fff;
@@ -1490,6 +1547,7 @@ Single Page Style
 
 .single-property .main-image img {
   float: none;
+  
 }
 
 .single-property .main-content h4 {

@@ -12,12 +12,12 @@ body {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   }
   
-  .order-form-container h1 {
+  .order-form-container h1  {
     font-size: 2rem;
     color: #333333;
     margin-bottom: 20px;
@@ -25,10 +25,10 @@ body {
   }
   
   .order-form-container h2 {
-    font-size: 1.5rem;
-    color: #555555;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
   /* Form Groups */
