@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <title>Matcha</title>
+  <title>Matcha</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="/assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="/assets/css/owl.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="/assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="/assets/css/owl.css">
+  <link rel="stylesheet" href="/assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--
 
 TemplateMo 591 villa agency
 
 https://templatemo.com/tm-591-villa-agency
 
 -->
-  </head>
+</head>
 
 <body>
 
@@ -44,396 +45,468 @@ https://templatemo.com/tm-591-villa-agency
   <!-- ***** Preloader End ***** -->
 
   <%- include("partials/header") %>
-  <!-- ***** Header Area End ***** -->
+    <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner">
-    <div class="owl-carousel owl-banner">
-      <div class="item item-1">
-        <div class="header-text">
-          <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
-          <h2>Hurry!<br>Get the Best Matcha </h2>
+    <div class="main-banner">
+      <div class="owl-carousel owl-banner">
+        <div class="item item-1">
+          <div class="header-text">
+            <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
+            <h2>Hurry!<br>Get the Best Matcha </h2>
+          </div>
         </div>
-      </div>
-      <div class="item item-2">
-        <div class="header-text">
-          <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
-          <h2>Be Quick!<br>Get Your Perfect Matcha Now</h2>
+        <div class="item item-2">
+          <div class="header-text">
+            <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
+            <h2>Be Quick!<br>Get Your Perfect Matcha Now</h2>
+          </div>
         </div>
-      </div>
-      <div class="item item-3">
-        <div class="header-text">
-          <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
-          <h2>Act Now!<br>Get the highest level Matcha</h2>
+        <div class="item item-3">
+          <div class="header-text">
+            <span style="visibility: hidden;" class="category">Matcha, <em>Type</em></span>
+            <h2>Act Now!<br>Get the highest level Matcha</h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="featured section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-image">
-            <img src="assets/images/features-matcha.webp" alt="">
-            <!-- <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a> --> 
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="section-heading">
-            <h6>| Featured</h6>
-            <h2>Best Matcha &amp; Tea</h2>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Our Values
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  At Hakone Matcha, we are dedicated to delivering the finest, authentic Japanese matcha to tea lovers around the world. Inspired by the rich cultural heritage of Hakone, Japan, our brand combines tradition, purity, and wellness to bring an unparalleled matcha experience.</div>
+
+    <div id="products" class="properties section">
+      <div class="properties section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 offset-lg-4">
+              <div class="section-heading text-center">
+                <h6>| Products</h6>
+                <h2>Our Products</h2>
+                
+
+              </div>
+
+            </div>
+            <div class="row" >
+              <div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+                <div class="filter_buttons">
+                  <button id="all_button"         class="active" onclick="Filter('all')">all</button>
+                  <button id="matcha_button"      class="" onclick="Filter('matcha')">matcha</button>
+                <button id="powder_button"        class="" onclick="Filter('powder')">powder</button>
+                  <button id="accessories_button" class="" onclick="Filter('accessories')">accessories</button>
+                </div>   
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Our Story
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Hakone Matcha was born from a passion for high-quality tea and a commitment to healthy, sustainable living. We source our matcha directly from the finest tea farms in Uji and Shizuoka, Japan, ensuring that every sip is rich in flavor, antioxidants, and centuries-old craftsmanship.
-                </div>
-              </div>
+            <div id="all" class="product_category cat_all">
+              <%- include("partials/products-list") %>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Why Choose Hakone Matcha?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  ✅ Premium Quality: We offer only ceremonial-grade and culinary-grade matcha, ensuring a smooth taste, vibrant green color, and superior health benefits. <br>
-                  ✅ Authenticity & Purity: Our matcha is 100% organic, free from additives, preservatives, or artificial flavors. <br>
-                  ✅ Sustainable Sourcing: We work closely with Japanese tea farmers who use traditional and eco-friendly harvesting methods. <br>
-                  ✅ Health Benefits: Rich in antioxidants, L-theanine, and natural energy boosters, our matcha promotes calm focus, detoxification, and overall wellness.
-                </div>
-              </div>
+            <div id="matcha" class="product_category hide">
+              <%- include("partials/matcha") %>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="info-table">
-            <ul>
-              <li>
-                <i class="fas fa-leaf" style="font-size: 24px; color: #4CAF50;"></i>
-                <h4>100% Organic<br><span>Purely Natural Ingredients</span></h4>
-              </li>
-              <li>
-                <i class="fas fa-hand-holding-heart" style="font-size: 24px; color: #FF9800;"></i>
-                <h4>Handpicked<br><span>Premium Quality Matcha</span></h4>
-              </li>
-              <li>
-                <i class="fas fa-shield-alt" style="font-size: 24px; color: #2196F3;"></i>
-                <h4>Rich in Antioxidants<br><span>Boosts Immunity</span></h4>
-              </li>
-              <li>
-                <i class="fas fa-bolt" style="font-size: 24px; color: #FFC107;"></i>
-                <h4>Natural Energy<br><span>Enhanced Vitality</span></h4>
-              </li>
-              <li>
-                <i class="fas fa-mug-hot" style="font-size: 24px; color: #795548;"></i>
-                <h4>Refreshing Taste<br><span>A Flavorful Experience</span></h4>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="video section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading text-center">
-            <h6>| Video View</h6>
-            <h2>Get Closer Taste & Different Feeling</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="video-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1">
-          <div class="video-frame">
-            <img src="assets/images/matcha-banner-4.webp" alt="">
-            <a href="https://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="counter">
-                  <!-- <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2> -->
-                   <p class="count-text ">highest grade of matcha</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
-                  <!-- <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2> -->
-                  <p class="count-text ">Fast deliveries</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
-                  <!-- <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2> -->
-                  <p class="count-text ">Unique matcha drinks</p>
-                </div>
-              </div>
+            <div id="powder" class="product_category hide">
+              <%- include("partials/powder") %>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section best-deal">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="section-heading">
-            <h6>| Best Deal</h6>
-            <h2>Find Your Best Deal Right Now!</h2>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="tabs-content">
-            <div class="row">
-              <div class="nav-wrapper ">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment" aria-selected="true">Vanilla</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">Sakura</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse" type="button" role="tab" aria-controls="penthouse" aria-selected="false">White Chocolate</button>
-                  </li>
-                </ul>
-              </div>              
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Flavor: <span style="font-size: 15px;">Smooth & Creamy</span></li>
-                          <li>Grade: <span style="font-size: 15px;">Premium</span></li>
-                          <li>Style: <span style="font-size: 15px;">Perfect for Lattes</span></li>
-                          <li>Benefit: <span style="font-size: 15px;">Boosts Energy</span></li>
-                          <li>Origin: <span style="font-size: 15px;">Vanilla-Infused</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <img src="assets/images/Vanilla Matcha.webp" alt="">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>Our Vanilla Matcha</h4>
-                      <p>Vanilla Matcha is a <strong>smooth, creamy twist</strong> on traditional matcha, balancing rich earthiness with natural sweetness. It’s packed with <strong>antioxidants and natural energy</strong>, making it a perfect <strong>wellness drink</strong>.<br><br> 
-
-                        With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>attract more customers</strong> and boost sales. Its <strong>vibrant look and unique taste</strong> make it an <strong>eye-catching, marketable product</strong>.<br></p>
-                      <div class="icon-button">
-                        <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Flavor: <span style="font-size: 15px;">Floral & Sweet</span></li>
-                          <li>Grade: <span style="font-size: 15px;">Ceremonial</span></li>
-                          <li>Style: <span style="font-size: 15px;">Ideal for Lattes</span></li>
-                          <li>Benefit: <span style="font-size: 15px;">Antioxidant-Rich</span></li>
-                          <li>Origin: <span style="font-size: 15px;">Sakura-Infused</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <img src="assets/images/Sakura Matcha.webp" alt="">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>Our Sakura Matcha</h4>
-                      <p>Sakura Matcha is a <strong>delicate, floral-infused twist</strong> on traditional matcha, blending rich green tea with subtle cherry blossom essence. It’s packed with <strong>antioxidants and calming properties</strong>, making it a perfect <strong>relaxation drink</strong>.<br><br>  
-
-                        With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>appeal to tea lovers</strong> and expand its audience. Its <strong>soft pink hues and elegant aroma</strong> make it an <strong>attractive, marketable product</strong>.<br></p>
-                      <div class="icon-button">
-                        <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <div class="info-table">
-                        <ul>
-                          <li>Flavor: <span style="font-size: 15px;">Sweet & Velvety</span></li>
-                          <li>Grade: <span style="font-size: 15px;">High Quality</span></li>
-                          <li>Style: <span style="font-size: 15px;">Perfect for Desserts</span></li>
-                          <li>Benefit: <span style="font-size: 15px;">Rich in Antioxidants</span></li>
-                          <li>Origin: <span style="font-size: 15px;">Chocolate-Infused</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <img src="assets/images/White Chocolate Matcha.webp" alt="">
-                    </div>
-                    <div class="col-lg-3">
-                      <h4>Our White Chocolate Matcha</h4>
-                      <p>White Chocolate Matcha is a <strong>smooth, indulgent fusion</strong> of rich matcha and creamy white chocolate, offering a <strong>luxurious and velvety</strong> taste experience. It’s packed with <strong>antioxidants and natural energy</strong>, making it both <strong>delicious and beneficial</strong>.<br><br>
-
-                        With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>attract dessert lovers</strong> and elevate its matcha menu. Its <strong>rich, creamy texture and premium appeal</strong> make it an <strong>irresistible, marketable product</strong>.<br><br></p>
-                      <div class="icon-button">
-                        <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div id="accessories" class="product_category hide">
+              <%- include("partials/accessories") %>
             </div>
+
           </div>
+
+
         </div>
       </div>
-    </div>
-  </div>
 
-  <div id="products" class="properties section">
-    <div class="properties section">
+
+    </div>
+
+    <script src="filter.js"></script>
+
+    <div class="featured section">
       <div class="container">
-          <div class="row">
-              <div class="col-lg-4 offset-lg-4">
-                  <div class="section-heading text-center">
-                      <h6>| Products</h6>
-                      <h2>Our Products</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="left-image">
+              <img src="assets/images/features-matcha.webp" alt="">
+              <!-- <a href="property-details.html"><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a> -->
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="section-heading">
+              <h6>| Featured</h6>
+              <h2>Best Matcha &amp; Tea</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Our Values
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    At Hakone Matcha, we are dedicated to delivering the finest, authentic Japanese matcha to tea lovers
+                    around the world. Inspired by the rich cultural heritage of Hakone, Japan, our brand combines
+                    tradition, purity, and wellness to bring an unparalleled matcha experience.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Our Story
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Hakone Matcha was born from a passion for high-quality tea and a commitment to healthy, sustainable
+                    living. We source our matcha directly from the finest tea farms in Uji and Shizuoka, Japan, ensuring
+                    that every sip is rich in flavor, antioxidants, and centuries-old craftsmanship.
                   </div>
+                </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Why Choose Hakone Matcha?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    ✅ Premium Quality: We offer only ceremonial-grade and culinary-grade matcha, ensuring a smooth
+                    taste, vibrant green color, and superior health benefits. <br>
+                    ✅ Authenticity & Purity: Our matcha is 100% organic, free from additives, preservatives, or
+                    artificial flavors. <br>
+                    ✅ Sustainable Sourcing: We work closely with Japanese tea farmers who use traditional and
+                    eco-friendly harvesting methods. <br>
+                    ✅ Health Benefits: Rich in antioxidants, L-theanine, and natural energy boosters, our matcha
+                    promotes calm focus, detoxification, and overall wellness.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <%- include("partials/products-list") %>
-        
-      </div>
-  </div>
+          <div class="col-lg-3">
+            <div class="info-table">
+              <ul>
+                <li>
+                  <i class="fas fa-leaf" style="font-size: 24px; color: #4CAF50;"></i>
+                  <h4>100% Organic<br><span>Purely Natural Ingredients</span></h4>
+                </li>
+                <li>
+                  <i class="fas fa-hand-holding-heart" style="font-size: 24px; color: #FF9800;"></i>
+                  <h4>Handpicked<br><span>Premium Quality Matcha</span></h4>
+                </li>
+                <li>
+                  <i class="fas fa-shield-alt" style="font-size: 24px; color: #2196F3;"></i>
+                  <h4>Rich in Antioxidants<br><span>Boosts Immunity</span></h4>
+                </li>
+                <li>
+                  <i class="fas fa-bolt" style="font-size: 24px; color: #FFC107;"></i>
+                  <h4>Natural Energy<br><span>Enhanced Vitality</span></h4>
+                </li>
+                <li>
+                  <i class="fas fa-mug-hot" style="font-size: 24px; color: #795548;"></i>
+                  <h4>Refreshing Taste<br><span>A Flavorful Experience</span></h4>
+                </li>
+              </ul>
 
-  
-  </div>
-
-  <div class="contact section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading text-center">
-            <h6>| Contact Us</h6>
-            <h2>Get In Touch With Our Agents</h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="contact-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171114.066427876!2d32.606061022138825!3d0.16492971062191256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182780d08350900f%3A0x403b0eb0a1976dd9!2sKenya!5e0!3m2!1sen!2sma!4v1738760948077!5m2!1sen!2sma" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="item phone">
-                <img src="/assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>+254 708634111<br><span>Phone Number</span></h6>
-              </div>
+    <div class="video section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+            <div class="section-heading text-center">
+              <h6>| Video View</h6>
+              <h2>Get Closer Taste & Different Feeling</h2>
             </div>
-            <div class="col-lg-6">
-              <div class="item email">
-                <img src="/assets/images/email-icon.png" alt="" style="max-width: 52px;">
-                <h6>hakone.ke@gmail.com<br><span>Business Email</span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="video-frame">
+              <img src="assets/images/matcha-banner-4.webp" alt="">
+              <a href="https://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="counter">
+                    <!-- <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2> -->
+                    <p class="count-text ">highest grade of matcha</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="counter">
+                    <!-- <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2> -->
+                    <p class="count-text ">Fast deliveries</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="counter">
+                    <!-- <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2> -->
+                    <p class="count-text ">Unique matcha drinks</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
-          <form id="contact-form" action="/send-mail" method="post">
+      </div>
+    </div>
+
+    <div class="section best-deal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-heading">
+              <h6>| Best Deal</h6>
+              <h2>Find Your Best Deal Right Now!</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="tabs-content">
+              <div class="row">
+                <div class="nav-wrapper ">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="appartment-tab" data-bs-toggle="tab"
+                        data-bs-target="#appartment" type="button" role="tab" aria-controls="appartment"
+                        aria-selected="true">Vanilla</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button"
+                        role="tab" aria-controls="villa" aria-selected="false">Sakura</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" data-bs-target="#penthouse"
+                        type="button" role="tab" aria-controls="penthouse" aria-selected="false">White
+                        Chocolate</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="appartment" role="tabpanel"
+                    aria-labelledby="appartment-tab">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="info-table">
+                          <ul>
+                            <li>Flavor: <span style="font-size: 15px;">Smooth & Creamy</span></li>
+                            <li>Grade: <span style="font-size: 15px;">Premium</span></li>
+                            <li>Style: <span style="font-size: 15px;">Perfect for Lattes</span></li>
+                            <li>Benefit: <span style="font-size: 15px;">Boosts Energy</span></li>
+                            <li>Origin: <span style="font-size: 15px;">Vanilla-Infused</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="assets/images/Vanilla Matcha.webp" alt="">
+                      </div>
+                      <div class="col-lg-3">
+                        <h4>Our Vanilla Matcha</h4>
+                        <p>Vanilla Matcha is a <strong>smooth, creamy twist</strong> on traditional matcha, balancing
+                          rich earthiness with natural sweetness. It’s packed with <strong>antioxidants and natural
+                            energy</strong>, making it a perfect <strong>wellness drink</strong>.<br><br>
+
+                          With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>attract more
+                            customers</strong> and boost sales. Its <strong>vibrant look and unique taste</strong> make
+                          it an <strong>eye-catching, marketable product</strong>.<br></p>
+                        <div class="icon-button">
+                          <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="info-table">
+                          <ul>
+                            <li>Flavor: <span style="font-size: 15px;">Floral & Sweet</span></li>
+                            <li>Grade: <span style="font-size: 15px;">Ceremonial</span></li>
+                            <li>Style: <span style="font-size: 15px;">Ideal for Lattes</span></li>
+                            <li>Benefit: <span style="font-size: 15px;">Antioxidant-Rich</span></li>
+                            <li>Origin: <span style="font-size: 15px;">Sakura-Infused</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="assets/images/Sakura Matcha.webp" alt="">
+                      </div>
+                      <div class="col-lg-3">
+                        <h4>Our Sakura Matcha</h4>
+                        <p>Sakura Matcha is a <strong>delicate, floral-infused twist</strong> on traditional matcha,
+                          blending rich green tea with subtle cherry blossom essence. It’s packed with
+                          <strong>antioxidants and calming properties</strong>, making it a perfect <strong>relaxation
+                            drink</strong>.<br><br>
+
+                          With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>appeal to tea
+                            lovers</strong> and expand its audience. Its <strong>soft pink hues and elegant
+                            aroma</strong> make it an <strong>attractive, marketable product</strong>.<br>
+                        </p>
+                        <div class="icon-button">
+                          <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="info-table">
+                          <ul>
+                            <li>Flavor: <span style="font-size: 15px;">Sweet & Velvety</span></li>
+                            <li>Grade: <span style="font-size: 15px;">High Quality</span></li>
+                            <li>Style: <span style="font-size: 15px;">Perfect for Desserts</span></li>
+                            <li>Benefit: <span style="font-size: 15px;">Rich in Antioxidants</span></li>
+                            <li>Origin: <span style="font-size: 15px;">Chocolate-Infused</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="assets/images/White Chocolate Matcha.webp" alt="">
+                      </div>
+                      <div class="col-lg-3">
+                        <h4>Our White Chocolate Matcha</h4>
+                        <p>White Chocolate Matcha is a <strong>smooth, indulgent fusion</strong> of rich matcha and
+                          creamy white chocolate, offering a <strong>luxurious and velvety</strong> taste experience.
+                          It’s packed with <strong>antioxidants and natural energy</strong>, making it both
+                          <strong>delicious and beneficial</strong>.<br><br>
+
+                          With <strong>lattes, iced drinks, and desserts</strong>, Hakone can <strong>attract dessert
+                            lovers</strong> and elevate its matcha menu. Its <strong>rich, creamy texture and premium
+                            appeal</strong> make it an <strong>irresistible, marketable product</strong>.<br><br>
+                        </p>
+                        <div class="icon-button">
+                          <a href="#products"><i class="fa fa-shopping-cart"></i> Order</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="contact section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+            <div class="section-heading text-center">
+              <h6>| Contact Us</h6>
+              <h2>Get In Touch With Our Agents</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8171114.066427876!2d32.606061022138825!3d0.16492971062191256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182780d08350900f%3A0x403b0eb0a1976dd9!2sKenya!5e0!3m2!1sen!2sma!4v1738760948077!5m2!1sen!2sma"
+                width="100%" height="500px" frameborder="0"
+                style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);"
+                allowfullscreen=""></iframe>
+            </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <fieldset>
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" placeholder="Your Name..." required>
-                    </fieldset>
+              <div class="col-lg-6">
+                <div class="item phone">
+                  <img src="/assets/images/phone-icon.png" alt="" style="max-width: 52px;">
+                  <h6>+254 708634111<br><span>Phone Number</span></h6>
                 </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="Your E-mail..." required>
-                    </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <div class="item email">
+                  <img src="/assets/images/email-icon.png" alt="" style="max-width: 52px;">
+                  <h6>hakone.ke@gmail.com<br><span>Business Email</span></h6>
                 </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" placeholder="Subject..." required>
-                    </fieldset>
-                </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                    </fieldset>
-                </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                        <button type="submit" id="form-submit" class="orange-button">Send Message</button>
-                    </fieldset>
-                    
-                </div>
+              </div>
             </div>
-        </form>
+          </div>
+          <div class="col-lg-5">
+            <form id="contact-form" action="/send-mail" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name..." required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Your E-mail..." required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject..." required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                  </fieldset>
 
+                </div>
+              </div>
+            </form>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <%- include("partials/footer") %>
+    <%- include("partials/footer") %>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="/vendor/jquery/jquery.min.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/assets/js/isotope.min.js"></script>
-  <script src="/assets/js/owl-carousel.js"></script>
-  <script src="/assets/js/counter.js"></script>
-  <script src="/assets/js/custom.js"></script>
-  <script src="/https://smtpjs.com/v3/smtp.js"></script>
-  <script src="/assets/js/script.js"></script>
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="/vendor/jquery/jquery.min.js"></script>
+      <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="/assets/js/isotope.min.js"></script>
+      <script src="/assets/js/owl-carousel.js"></script>
+      <script src="/assets/js/counter.js"></script>
+      <script src="/assets/js/custom.js"></script>
+      <script src="/https://smtpjs.com/v3/smtp.js"></script>
+      <script src="/assets/js/script.js"></script>
 
-  </body>
+</body>
+
 </html>

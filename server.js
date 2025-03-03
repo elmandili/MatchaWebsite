@@ -87,17 +87,17 @@ app.post("/add-product", upload.single("image"), async (req, res) => {
 
 app.delete('/delete-product/:id', async (req, res) => {
   try {
-      const productId = req.params.id;
-      const result = await Product.findByIdAndDelete(productId);
+    const productId = req.params.id;
+    const result = await Product.findByIdAndDelete(productId);
 
-      if (result) {
-          res.status(200).json({ message: 'Product deleted successfully!' });
-      } else {
-          res.status(404).json({ error: 'Product not found!' });
-      }
+    if (result) {
+      res.status(200).json({ message: 'Product deleted successfully!' });
+    } else {
+      res.status(404).json({ error: 'Product not found!' });
+    }
   } catch (error) {
-      console.error('Error deleting product:', error);
-      res.status(500).json({ error: 'Error deleting product' });
+    console.error('Error deleting product:', error);
+    res.status(500).json({ error: 'Error deleting product' });
   }
 });
 
@@ -301,7 +301,15 @@ app.get('/', async (req, res) => {
       };
     });
 
-    res.render('index', { products: processedProducts, activePage: "home" });
+    const matchaProducts = processedProducts.filter(product => product.category === 'matcha');
+    const accessoriesProducts = processedProducts.filter(product => product.category === 'accessories');
+    const powderProducts = processedProducts.filter(product => product.category === 'pouder');
+
+    res.render('index', { products: processedProducts, 
+      category_matcha: matchaProducts, 
+      category_accessories: accessoriesProducts,
+      category_powder: powderProducts,
+      activePage: "home", category: "matcha" });
   } catch (err) {
     res.status(500).send('Error fetching products');
   }
@@ -319,14 +327,14 @@ app.get("/product-preview/:id", async (req, res) => {
     const product = await Product.findById(productId);
 
 
-    
-    
+
+
     if (!product) {
       return res.status(404).send("Product not found");
     }
-    else{
+    else {
       product.image = `data:${product.image.contentType};base64,${product.image.data.toString('base64')}`
-      
+
     }
     res.render("product-details", { product, activePage: 'products' });
   } catch (err) {

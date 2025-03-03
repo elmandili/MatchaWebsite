@@ -1,6 +1,6 @@
-
 <div class="row" id="product-list">
     <% products.forEach(product => { %>
+        <% if (product.category === "powder") { %>
         <div class="col-lg-4 col-md-6">
             <div class="item">
                 <a href="property-details.html?id=<%= product.id %>">
@@ -21,5 +21,7 @@
                 </div>
             </div>
         </div>
+        <% } %>
+
     <% }) %>
 </div>

@@ -6,14 +6,15 @@
                     <div class="section-heading text-center">
                         <h6>| Products</h6>
                         <h2>Our Products</h2>
+                        <button>matcha</button>
                     </div>
                 </div>
             </div>
 
             <div class="row" id="product-list">
                 <% products.forEach(product=> { %>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
+                    <div  class="col-lg-4 col-md-6 "   >
+                        <div class="item" id="item">
                             <a href="property-details.html?id=<%= product._id %>">
                                 <img src="<%= product.image %>" alt="">
                             </a>
